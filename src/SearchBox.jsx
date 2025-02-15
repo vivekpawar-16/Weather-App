@@ -53,6 +53,9 @@ export default function SearchBox({updateInfo }) {
         catch(err)
         {
             setError(true);
+            setTimeout(() => {
+                setError(false);
+            }, 1000);
         }
     };
     return (
@@ -62,7 +65,7 @@ export default function SearchBox({updateInfo }) {
                 <br></br>
                 <br></br>
                 <Button variant="contained" type='submit'>Search</Button>
-            {/* {error && <p style = {{color:"red"}}>No such place exists !</p>} */}
+            {error && <p style = {{color:"red"}}>No such place exists !</p>}
             </form>
         </div>
     );
