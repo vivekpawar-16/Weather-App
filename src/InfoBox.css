@@ -29,7 +29,7 @@
 
 .weather-details {
     margin-top: 15px;
-    font-size: 15px;
+    font-size: 18px;
     display: grid;
     grid-template-columns: auto auto; 
     text-align: left;
