@@ -3,7 +3,7 @@ A simple weather application built with React and OpenWeather API to display cur
 
 🚀 Features
 Search weather by city name
-Display temperature, humidity, wind speed, and weather conditions
+Display temperature, humidity,min temp ,max temp and weather conditions
 Background changes based on weather conditions
 Responsive design for mobile and desktop
 Uses OpenWeather API to fetch real-time weather data
