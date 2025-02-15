@@ -1,6 +1,19 @@
-.SearchBox{
-
-    text-align: center;
+.SearchBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin-bottom: 25px;
-    
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.error-message {
+    color: red;
+    margin-top: 10px; 
+    text-align: center;
+    width: 100%; 
 }

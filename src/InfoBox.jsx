@@ -41,17 +41,20 @@ export default function InfoBox({info}){
         <Typography gutterBottom variant="h5" component="div">
           {info.city}
         { info.humidity > 80 ? <ThunderstormIcon/>: (info.temp > 15) ? <WbSunnyIcon/> :<AcUnitIcon/> }
-        
         </Typography>
-        <Typography variant="body2" color= 'text.secondary' component={"span"}>
-          <p>Temprature = {info.temp}&deg;C</p>
-         <p>Humidity = {info.humidity}</p>
-        <p>Max Temprature = {info.tempMax}&deg;C</p>
-        <p>Min Temprature = {info.tempMin}&deg;C</p>
-        <p>FeelsLike={info.feelsLike}&deg;C</p>
-        <p>The Weather Can Be Described as <i>{info.weather}</i> and  feels like {info.feelsLike}&deg;C</p>
-        
-        </Typography>
+        <Typography variant="body2" color="text.secondary" component={"span"}>
+        <div className="weather-details">
+  <p><span>Temperature:</span> {info.temp}°C</p>  
+  <p><span>Humidity:</span> {info.humidity}%</p>  
+
+  <p><span>Max Temp:</span> {info.tempMax}°C</p>  
+  <p><span>Min Temp:</span> {info.tempMin}°C</p>  
+
+  <p><span>Feels Like:</span> {info.feelsLike}°C</p>  
+  <p><span>Description:</span> <i>{info.weather}</i></p>  
+</div>
+
+</Typography>
       </CardContent>
       
     </Card>
@@ -60,3 +63,4 @@ export default function InfoBox({info}){
     )
 
 }
+
